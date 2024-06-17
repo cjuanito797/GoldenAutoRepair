@@ -1,0 +1,123 @@
+/*removes default margin & padding*/
+html, body {
+    padding: 0px !important;
+    margin: 0px !important;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth !important;
+}
+
+/*sets body height to max; and allows scrollbar as page content grows*/
+body {
+    flex-direction: column;
+    min-height: 100vh;
+    display: flex;
+}
+
+ .footer {
+     bottom: 0;
+     background-color: #2F2F2F;
+     margin-top: auto;
+ }
+
+p {
+    font-family: Charter;
+}
+
+h1 {
+    font-family: Charter;
+    font-weight: bold;
+}
+
+#mainbody {
+    background-image: url("../GoldenAutoRepair.png");
+    background-position: top 15% center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-shrink: 0;
+    min-height: 73vh;
+
+}
+
+#intro {
+    font-family: Charter;
+    margin-top: 5vh;
+
+}
+
+#intro-title {
+    font-size: 65px;
+}
+
+#about_us_intro {
+    font-family: Charter;
+    background-color: #2F2F2F;
+    width: 450px;
+}
+
+#yellow_divider {
+    border-left: 3px solid #EEDC82;
+    height: 65px;
+
+}
+#vbar {
+    border-left: 3px solid white;
+    height: 150px;
+    margin-top: 5%;
+}
+#virtues {
+    background-color: #EEDC82;
+}
+
+#slogan {
+    margin-top: 3vh;
+}
+
+#our_services_intro {
+    background-color: #EEDC82;
+    font-family: Charter;
+    width: 450px;
+}
+
+#our_services {
+    background-color: #FCFBF4;
+}
+
+.top_branding {
+    background-color: #EEDC82;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#spacing {
+    margin-right: auto;
+    visibility: hidden;
+}
+
+#message {
+    justify-content: center;
+}
+
+#white_divider {
+    border: 2px solid white;
+    height: 75px;
+}
+
+a:hover {
+    background-color: transparent;
+}
+
+#social_links {
+    margin-left: auto;
+}
+
+#contact_information_bottom {
+    background-color: #EEDC82;
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar-menu {
+    background-color: #212121;
+  }
+}

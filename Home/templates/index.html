@@ -1,0 +1,407 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Golden Auto Repair</title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link href="{% static 'css/main.css' %}" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="icon" href="{% static 'logo.png' %}">
+
+
+    {% block branding %}
+
+
+
+        <div id="top_branding" class="p-2 top_branding mb-1">
+
+            <div id="spacing" class="p-0">
+                <p class="text has-text-white has-text-weight-semibold
+                is-size-5">Spacing</p>
+            </div>
+            <div id="message" class="p-0">
+                <p class="text has-text-white has-text-weight-semibold
+                is-size-6"><a href="#visit_us" class="has-text-white
+                is-underlined">Contact Us</a> For All Your Auto
+                    Repair
+                    Needs!</p>
+            </div>
+
+            <div id="social_links" class="pt-1 mr-3">
+                <img src="{% static 'icons8-facebook-50.png' %}" width="32"
+                     height="32">
+            </div>
+
+        </div>
+
+
+        <div id="goldenBranding" class="p-0 is-flex columns is-centered
+        is-mobile is-align-content-center" style="background-color: white;">
+
+
+            <div id="branding_image" class="column is-one-quarter is-full-mobile
+            has-text-centered-mobile">
+                <img src="{% static 'logo.png' %}" width="125" height="125"
+                     class=" p-1 mt-3">
+
+            </div>
+
+
+            <div id="contact_information" class="column is-hidden-mobile
+             p-2 is-flex mt-3 is-justify-content-end is-align-content-center">
+
+                <div id="main_icons" class="is-flex mt-4">
+
+                    <div id="phone_contact" class="is-flex p-3 ml-1 m-3">
+                        <div id="icon" class="mr-2">
+                            <img src="{% static 'icons8-phone-50.png' %}"
+                                 width="35" height="35">
+                        </div>
+
+                        <div id="contact_info" style="white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;">
+                            <p class="text has-text-weight-semibold">Phone:</p>
+                            <p class="text">(712)-828-1588</p>
+                        </div>
+                    </div>
+
+                    <div id="yellow_divider">
+                    </div>
+
+
+                    <div id="address" class="is-flex p-3 ml-3 m-3">
+                        <div id="icon" class="mr-2">
+                            <img src="{% static 'icons8-location-50.png' %}"
+                                 width="35" height="35">
+                        </div>
+
+                        <div id="address_information">
+                            <p class="text has-text-weight-semibold">Visit us
+                                at:</p>
+                            <p class="text">820 S 25th St, Council Bluffs,
+                                IA</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    {% endblock %}
+
+</head>
+<body>
+
+
+{% block mainbody %}
+
+    <section class="hero p-0" id="mainbody">
+
+        <section class="hero-head">
+            <nav class="navbar" role="navigation"
+                 aria-label="main navigation">
+                <div class="navbar-brand">
+
+
+                    </a>
+
+                    <a role="button" class="navbar-burger" aria-label="menu"
+                       aria-expanded="false" data-target="navbarBasicExample"
+                       style="color: white;">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div id="navbarBasicExample" class="navbar-menu p-5 
+                is-dark-mobile">
+                    <div class="navbar-start">
+                        <a class="navbar-item has-text-weight-bold
+                        is-size-6 ml-5" id="p2" style="color: white;">
+                            Home
+                        </a>
+
+
+                    </div>
+
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="buttons">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+
+        <section class="hero-body p-3">
+            <div id="intro" class="has-text-centered has-text-white
+        has-text-weight-bold">
+                <h1 id="intro-title" class="title p-0 has-text-centered
+                has-text-weight-bold has-text-white">Car & Auto Repair
+                    Services</h1>
+
+            </div>
+        </section>
+
+
+    </section>
+
+
+    <section class="hero" id="virtues">
+
+        <div class="columns mb-3 p-1 ml-2">
+
+
+            <div class="column is-one-third is-flex">
+                <div id="content">
+                    <h1 class="subtitle
+                    has-text-weight-semibold ml-2 mt-5
+                    has-text-white is-size-4-fullhd
+                    is-size-5-tablet is-size-5-mobile">Certified</h1>
+                    <div class="column p-2">
+                        <p class="text ml-5 has-text-white
+                    has-text-weight-semibold is-size-6">Lorem Ipsum dolor sit
+                            amet,
+                            constetur
+                            sadipscing elitr, sed diam nonumy elmod tempor
+                            invidnt ut labore el dolore.</p>
+                    </div>
+
+                </div>
+
+                <div class="is-hidden-mobile ml-2" id="vbar">
+                </div>
+            </div>
+
+
+            <div class="column is-one-third is-flex is-align-content-left">
+
+                <div id="content">
+                    <h1 class="subtitle
+                    has-text-weight-semibold ml-2 mt-5
+                    has-text-white is-size-4-fullhd
+                    is-size-5-tablet is-size-5-mobile" style="font-family:
+                    Charter;">Experience</h1>
+                    <div class="column p-2">
+                        <p class="text ml-5 has-text-white
+                    has-text-weight-semibold is-size-6">Lorem Ipsum dolor sit
+                            amet,
+                            constetur
+                            sadipscing elitr, sed diam nonumy elmod tempor
+                            invidnt ut labore el dolore.</p>
+                    </div>
+                </div>
+
+                <div class="is-hidden-mobile ml-2" id="vbar">
+                </div>
+            </div>
+
+            <div class="column is-one-third">
+                <h1 class="subtitle
+                    has-text-weight-semibold ml-2 mt-5
+                    has-text-white is-size-4-fullhd
+                    is-size-5-tablet is-size-5-mobile">Dependency</h1>
+                <div class="column p-2">
+                    <p class="text ml-5 has-text-white
+                    has-text-weight-semibold is-size-6">Lorem Ipsum dolor sit
+                        amet,
+                        constetur
+                        sadipscing elitr, sed diam nonumy elmod tempor
+                        invidnt ut labore el dolore.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="hero pb-5" id="about_us">
+
+        <div id="about_us_intro" class="has-text-centered">
+            <h1 class="title p-3 has-text-white ml-5 is-size-3">
+                A little bit about us.</h1>
+        </div>
+
+        <div class="columns">
+            <div class="column is-half-fullhd is-three-fourths-mobile 
+             m-5
+            has-text-centered 
+            is-align-content-center is-justify-content-center">
+                <img src="{% static 'mustang.jpg' %}" width="550" height="550">
+            </div>
+
+            <div class="column mt-5 p-5 is-half-fullhd
+            is-two-fifths-tablet is-full-mobile">
+
+                <div class="columns is-mobile is-centered
+                is-align-content-center">
+                    <div class="column is-three-fifths-fullhd mt-5">
+                        <p class="p-4 has-text-weight-bold
+                        is-size-6-mobile is-size-5-fullhd">Here at
+                            Golden Auto Repair we take a golden approach for
+                            all of your automobile repair needs. With this
+                            approach we can confidently assure you that all
+                            vehicles are professionally serviced and treated
+                            as if they were our own mothers' vehicle. We are
+                            based in the heart of Council Bluffs, IA and can
+                            service just about any vehicle. So stop on by and
+                            visit Golden Auto Repair.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="hero pb-5" id="our_services">
+
+        <div id="our_services_intro" class="has-text-centered">
+            <h1 class="title p-3 has-text-white ml-5">What We Offer.</h1>
+        </div>
+
+        <section class="hero-body">
+            <div class="has-text-centered p-3">
+                <p class="text is-size-4 has-text-weight-bold">Offering you
+                    the best auto repair services in the Omaha metro area.
+                </p>
+            </div>
+
+            <div class="columns is-mobile is-centered pt-5 mt-3">
+                <div class="column is-half-fullhd is-full-mobile">
+                    <div class="columns">
+                        <div class="column has-text-centered">
+                            <img src="{% static 'car-engine.png' %}"
+                                 width="100" height="100">
+                            <p class="text has-text-weight-semibold">Engine</p>
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <img src="{% static 'car-suspension.png' %}"
+                                 width="100" height="100">
+                            <p class="text has-text-weight-semibold">
+                                Suspension</p>
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <img src="{% static 'car-brake.png' %}"
+                                 width="100" height="100">
+                            <p class="text has-text-weight-semibold">Brakes</p>
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <img src="{% static 'car-tire.png' %}"
+                                 width="100" height="100">
+                            <p class="text has-text-weight-semibold">Tire
+                                Repair</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </section>
+
+
+    <section class="hero p-5" id="visit_us">
+
+        <section class="hero-body p-5">
+            <div class="has-text-centered pb-4">
+                <h1 class="title is-size-3">Visit Us!</h1>
+            </div>
+            <div class="columns is-mobile is-centered">
+
+
+                <div class="column is-half-fullhd is-four-fifths-tablet
+                is-full-mobile is-flex">
+                    <div style="width: 100%">
+                        <iframe width="100%" height="300" frameborder="0"
+                                scrolling="no" marginheight="0" marginwidth="0"
+                                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=+(Golden%20Auto%20Repair)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                        </iframe>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            </div>
+        </section>
+
+    </section>
+
+    <section class="hero pt-3 pb-2" id="contact_information_bottom">
+
+        <div class="columns has-text-centered is-align-content-center">
+            <div class="column is-one-third p-2 mt-2">
+                <p class="text has-text-white is-size-5 has-text-weight-bold">
+                    Call
+                    Us<br>(712)-828-1588</p>
+            </div>
+
+            <div id="white_divider" class="is-hidden-mobile mb-3 mt-3"></div>
+
+            <div class="column is-one-third p-2 mt-2">
+                <p class="text has-text-white is-size-5 has-text-weight-bold">
+                    Email
+                    Us<br>laserstang08@gmail.com</p>
+            </div>
+
+            <div id="white_divider" class="is-hidden-mobile mb-3 mt-3"></div>
+
+            <div class="column is-one-third p-2 mt-2">
+                <p class="text has-text-white is-size-5
+            has-text-weight-bold">Visit Us<br>Mon - Fri: 8am - 5pm</p>
+            </div>
+        </div>
+
+
+    </section>
+
+
+{% endblock %}
+
+{% block footer %}
+
+    <footer class="footer p-5">
+        <div class="content has-text-centered">
+            <p class="title is-size-5 has-text-white">
+                <strong>Golden Auto Repair</strong>
+            </p>
+        </div>
+    </footer>
+
+
+{% endblock %}
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        // Check for click events on the navbar burger icon
+        $(".navbar-burger").click(function () {
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            $(".navbar-burger").toggleClass("is-active");
+            $(".navbar-menu").toggleClass("is-active");
+
+        });
+    });
+
+</script>
+
+
+</body>
+</html>
